@@ -11,7 +11,7 @@ YELLOW = '\033[93m'
 BLUE = '\033[94m'
 RESET = '\033[0m'
 
-# We pretend to be a Google Chrome browser on Windows 10
+
 HEADERS_TO_SEND = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -35,7 +35,7 @@ def analyze_headers(url):
     print("-" * 60)
 
     try:
-        # We now send the fake browser headers
+       
         response = requests.get(url, headers=HEADERS_TO_SEND, timeout=5, verify=False, allow_redirects=True)
         
         print(f"{YELLOW}[*] Final Destination: {response.url}{RESET}")
