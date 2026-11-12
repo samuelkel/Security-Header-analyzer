@@ -11,3 +11,7 @@ A lightweight Python tool designed to perform reconnaissance on web servers by a
 🚀 Usage
 bash
 python3 security_header_analyzer.py -u google.com
+
+⚠️ Disclaimer
+
+This tool is for educational purposes and authorized security testing only.
